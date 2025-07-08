@@ -1,0 +1,26 @@
+{
+  "name": "test_repo_vercel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/antares-farias/test_repo_vercel.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/antares-farias/test_repo_vercel/issues"
+  },
+  "homepage": "https://github.com/antares-farias/test_repo_vercel#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.11"
+  }
+}
