@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Invitación de Boda</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background: #f8f4f0;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2em;
+      color: #a15f5f;
+    }
+
+    .photos {
+      display: flex;
+      justify-content: space-between;
+      margin: 20px 0;
+    }
+
+    .photos img {
+      width: 48%;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .invitation-text {
+      font-size: 1.1em;
+      margin: 20px 0;
+      line-height: 1.5;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 80%;
+      margin-bottom: 10px;
+    }
+
+    button {
+      background: #a15f5f;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 1em;
+      cursor: pointer;
+    }
+
+    .result {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Estás Invitado a Nuestra Boda</h1>
+    
+    <div class="photos">
+      <img src="https://via.placeholder.com/250x300?text=Novia" alt="Novia">
+      <img src="https://via.placeholder.com/250x300?text=Novio" alt="Novio">
+    </div>
+    
+    <p class="invitation-text">
+      Con mucho amor te invitamos a celebrar el día más especial de nuestras vidas.  
+      <br><strong>El 20 de septiembre de 2025</strong> en <em>Jardín de los Sueños</em>, CDMX.
+    </p>
+
+    <input id="codigo" type="text" placeholder="Ingresa tu código de invitación">
+    <br>
+    <button onclick="validarCodigo()">Validar</button>
+
+    <p class="result" id="resultado"></p>
+  </div>
+
+  <script>
+    function validarCodigo() {
+      const codigo = document.getElementById("codigo").value.trim();
+      const resultado = document.getElementById("resultado");
+
+      // Puedes cambiar el código válido aquí
+      if (codigo === "BODA2025") {
+        resultado.textContent = "¡Bienvenido! Tu invitación ha sido validada 💌";
+        resultado.style.color = "green";
+      } else {
+        resultado.textContent = "Código inválido. Por favor verifica tu invitación.";
+        resultado.style.color = "red";
+      }
+    }
+  </script>
+</body>
+</html>
