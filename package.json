@@ -12,13 +12,15 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/antares-farias/test_repo_vercel/issues"
   },
   "homepage": "https://github.com/antares-farias/test_repo_vercel#readme",
   "description": "",
   "dependencies": {
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "firebase": "^12.0.0"
   },
   "devDependencies": {
     "@types/node": "^24.0.11"

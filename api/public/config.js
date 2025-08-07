@@ -1,5 +1,5 @@
 const config = {
-    port: 3010,
+    port: 3000,
     url: 'http://localhost'
 }
 const firebaseConfig = {

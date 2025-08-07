@@ -1,5 +1,5 @@
 //import { config } from './config.js';
-const config = {
+/*const config = {
     port: 3000,
     url: 'http://localhost'
 }

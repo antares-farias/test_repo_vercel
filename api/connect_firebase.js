@@ -67,7 +67,7 @@ async function getStorage(table, cb){
     // Initialize Cloud Firestore and get a reference to the service
     const db = getFirestore(app);
     const querySnapshot = await getDocs(collection(db, table));
-    var colArr = []
+    var colArr = [];
     querySnapshot.forEach((doc) => {
     console.log(`${doc.id} => ${doc.data()}`);
     colArr.push(doc.data());
